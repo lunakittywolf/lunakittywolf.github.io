@@ -33,13 +33,14 @@ let numberParse = function(x){
 }
 
 let changeName = function(){
+        $(".myFont").removeClass(myName(numberParse(currentName)).replaceAll(" ",""))
         $(".myName").removeClass(myName(numberParse(currentName)).replaceAll(" ",""))
         currentName++;
         $(".myName").text(myName(numberParse(currentName)))
         $(".myName").addClass(myName(numberParse(currentName)).replaceAll(" ",""))
+        $(".myFont").addClass(myName(numberParse(currentName)).replaceAll(" ",""))
         document.documentElement.style.setProperty('--Color', `var(--${myName(numberParse(currentName)).replaceAll(" ","")})`);
         document.documentElement.style.setProperty('--Color2', `var(--${myName(numberParse(currentName+1)).replaceAll(" ","")})`);
         document.documentElement.style.setProperty('--Color3', `var(--${myName(numberParse(currentName+2)).replaceAll(" ","")})`);
         document.documentElement.style.setProperty('--Color4', `var(--${myName(numberParse(currentName+3)).replaceAll(" ","")})`);
-        document.title = myName(numberParse(currentName)) + "'s Splash Page" 
 }

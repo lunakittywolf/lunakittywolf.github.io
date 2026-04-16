@@ -1,5 +1,13 @@
+let changeTitle = function(){
+    document.title = myName(numberParse(currentName)) + "'s Splash Page" 
+}
 changeName();
-setInterval(changeName, 1500)
+
+let changeNameStuff = function(){
+    changeName();
+    changeTitle();
+}
+setInterval(changeNameStuff, 1500)
 
 let sillyQuotes = [
     "Did you know you can kinda just do whatever you want? It's fucked up.",
