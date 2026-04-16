@@ -43,6 +43,7 @@ button:hover{
 
 button{
     font-family:Orbitron;
+    background-color:var(--Color);
 }
 
 input, textarea{
