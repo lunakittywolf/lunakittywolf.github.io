@@ -37,6 +37,7 @@
 }
 body{
     animation: rainbow 10s linear infinite;
+    position:fixed;
 }
 
 @keyframes rainbow {
