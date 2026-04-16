@@ -9,7 +9,7 @@ body{
     background: rgb(1, 78, 112);
     background: radial-gradient(at top, rgba(1, 78, 112, 1) 0%, rgba(20, 26, 50, 1) 100%);
     justify-content: flex-start;
-    overflow:scroll;
+    overflow:hidden;
 }
 
 #title-desc{
@@ -102,4 +102,13 @@ body{
 #splash-page{
     position:static;
     padding-bottom: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y:scroll;
+    width: 100%;
+    height:100%;
 }
