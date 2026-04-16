@@ -37,3 +37,13 @@ $("#play-music").on("click",function(){
     $("#play-music").text(`You're listening to "Dancing Spirit - Redux -", a remake of the first composition I ever created. The original I made sometime in middle school around 2010. This version was made in 2016.`)
     playSong();
 })
+
+isMobile = function(){
+    return (window.matchMedia("(any-hover:none)").matches) 
+};
+if (isMobile()) {
+    $("#welcome-message").html('<span style="height:38px; display:block;" class="myName Melody">Melody</span>')
+    $("#welcome-message").css("padding-bottom","10px")
+    $("#title-text").css("width","100%")
+    $("#title-section").css("width","100%")
+}

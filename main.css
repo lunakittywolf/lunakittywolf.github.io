@@ -61,6 +61,8 @@ body{
     padding-bottom: 3px;
     height: 50px;
     font-family:"Jura";
+    /* Mobile */
+    height: auto;
 }
 
 #title-text{
@@ -80,6 +82,7 @@ body{
     width:500px;
     padding-bottom:10px;
     font-family:"Jura";
+    max-width:-webkit-fill-available;
 }
 .quick-nav-button{
     text-align:center;
@@ -92,6 +95,11 @@ body{
     margin-top:5px;
     padding: 20px;
     padding-top:10px;
+    /* mobile */
+    width:inherit;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 li{
     padding-top:10px;
@@ -216,6 +224,7 @@ a.quick-nav-button:visited{
     margin-top: 10px;
     transition: 1000ms;
     transform: translateY(-100px);
+    text-align:center;
 }
 
 #play-music{
@@ -223,6 +232,7 @@ a.quick-nav-button:visited{
     font-family:Jura;
     position:absolute;
     bottom:10px;
+    text-align:center;
 }
 #play-music:hover{
     cursor:pointer;
