@@ -1,0 +1,98 @@
+#title{
+    font-family: "Orbitron";
+    color: white;
+    text-shadow: 0px 0px 5px #03A9F4;   
+    text-align: center;
+    padding-top:5px;
+}
+body{
+    background: rgb(1, 78, 112);
+    background: radial-gradient(at top, rgba(1, 78, 112, 1) 0%, rgba(20, 26, 50, 1) 100%);
+    justify-content: flex-start;
+}
+
+#title-desc{
+    margin-top: 50px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #1E2747;
+    border: solid 1px white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #03A9F4;
+}
+
+#description{
+    padding: 10px;
+    font-family: "Jura";
+    text-shadow: 2px 2px 2px #000000;
+    padding-bottom:5px;
+}
+
+#description > p {
+    padding-bottom:5px;
+}
+
+#main-task{
+    margin: 50px;
+    padding: 10px;
+    padding-right:0px;
+    background-color: #1E2747;
+    border: solid 1px white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #03A9F4;
+}
+
+#main-task-title{
+    font-family:"Orbitron";
+    text-align:center;
+    text-shadow: 0px 0px 5px #03A9F4;
+}
+
+#future-things-title{
+    font-family:"Orbitron";
+    text-align:center;
+    text-shadow: 0px 0px 5px #03A9F4;
+}
+
+.task{
+    background-color: #005775;
+    border: solid white 2px;
+    padding: 10px;
+    margin-top: 10px;
+    font-family:"Jura";
+    text-shadow: 2px 2px 2px #1E2747;
+    margin-right:10px;
+    width:500px;
+}
+
+.task-title{
+    font-family: 'Orbitron';
+    text-align:center;
+}
+
+#future-things{
+    background-color: #1E2747;
+    border: solid 1px white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #03A9F4;
+    padding: 10px;
+    padding-right:0px;
+    max-width: 1542px;
+}
+
+#task-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.task-description{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.minimum-acheivement{
+    margin-top:5px;
+    margin-bottom:5px;
+}

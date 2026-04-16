@@ -1,0 +1,248 @@
+@font-face {
+  font-family: StarLitNight;
+  src: url('Star.ttf');
+}
+
+:root{
+    --Mikey: rgb(4, 255, 171);
+    --Melody: burlywood;
+    --KittyWolf: magenta;
+    --PhoenixSteve: rgb(0, 174, 255);
+    --Marshmallow: pink;
+    --Luna: rgb(164, 77, 190);
+    --Color: var(--Melody);
+    --Color2: var(--KittyWolf);
+    --Color3: var(--PhoenixSteve);
+    --Color4: var(--Marshmallow);
+    interpolate-size: allow-keywords;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+menu{
+    list-style-type: none;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+
+    background-color: black;
+    color: white;
+
+    overflow: hidden;
+}
+
+#title-section{
+    display:flex;
+    flex-direction:row;
+}
+
+#welcome-message{
+    text-align:center;
+    border-bottom: solid;
+    border-bottom-color: var(--Color);
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+    height: 50px;
+    font-family:"Jura";
+}
+
+#title-text{
+    display:flex;
+    flex-direction:column;
+}
+
+#title-image{
+
+}
+
+#quick-nav{
+    text-align: center;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;;
+    width:500px;
+    padding-bottom:10px;
+    font-family:"Jura";
+}
+.quick-nav-button{
+    text-align:center;
+    width: -moz-available;
+    width: -webkit-fill-available;
+}
+
+#main-section{
+    text-align:center;
+    margin-top:5px;
+    padding: 20px;
+    padding-top:10px;
+}
+li{
+    padding-top:10px;
+}
+.link-title:hover{
+    cursor:pointer;
+}
+
+a:link {
+  color: var(--Color4);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a.color2:link {
+  color: var(--Color2);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a.color3:link {
+  color: var(--Color3);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a.quick-nav-button:link{
+color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a.quick-nav-button:visited{
+    color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.quick-nav-button:hover{
+    cursor:pointer;
+}
+
+.Mikey{
+    color: var(--Mikey);
+    font-family:"Philosopher";
+}
+
+.Melody{
+    color: var(--Melody);
+    font-family:"Dancing Script";
+}
+
+.KittyWolf{
+    color: var(--KittyWolf);
+    font-family:"Architects Daughter";
+}
+
+.PhoenixSteve{
+    color: var(--PhoenixSteve);
+    font-family:"Orbitron";
+}
+
+.Marshmallow{
+    color: var(--Marshmallow);
+    font-family:"Indie Flower";
+}
+
+.Luna{
+    color: var(--Luna);
+    font-family:"StarLitNight"
+}
+
+#silly-quote{
+    text-align:center;
+    border-bottom: solid;
+    border-color: var(--Color);
+    padding-bottom: 5px;
+    font-family: "architects daughter";
+    user-select: none; 
+}
+#silly-quote:hover{
+    cursor:pointer;
+}
+
+.fa-reddit{
+    color: #FF5700;
+    background-color:white;
+    border-radius: 100%;
+}
+
+.fa-youtube{
+    color:#FF0000;
+    background-color:white;
+    border-radius:5px;
+}
+
+#options{
+    font-size:16px;
+}
+
+.link-title{
+    font-family:"Jura";
+    font-weight:bold;
+}
+.link-description{
+    font-weight: normal;
+}
+
+#music-popup{
+    position: absolute;
+    top: 0;
+    background-color: darkmagenta;
+    padding: 5px;
+    border: solid 1px;
+    border-radius: 5px;
+    font-family: "Jura";
+    font-size: 15px;
+    margin-top: 10px;
+    transition: 1000ms;
+    transform: translateY(-100px);
+}
+
+#play-music{
+    padding-top:5px;
+    font-family:Jura;
+    position:absolute;
+    bottom:10px;
+}
+#play-music:hover{
+    cursor:pointer;
+    color:aqua;
+}
+
+#splash-page{
+    padding-top:5px;
+    font-family:Jura;
+    position:absolute;
+    bottom:10px;
+}
+
+#splash-page:hover{
+    cursor:pointer;
+    color:aqua;
+}
+
+a#splash-page:link{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
