@@ -1,6 +1,6 @@
 @font-face {
   font-family: StarLitNight;
-  src: url('Star.ttf');
+  src: url('../assets/Star.ttf');
 }
 
 :root{
@@ -14,6 +14,8 @@
     --Color2: var(--KittyWolf);
     --Color3: var(--PhoenixSteve);
     --Color4: var(--Marshmallow);
+    --Color5: var(--Luna);
+    --Color6: var(--Mikey);
     interpolate-size: allow-keywords;
 }
 
@@ -108,37 +110,49 @@ li{
 }
 
 a:link {
-  color: var(--Color4);
-  background-color: transparent;
-  text-decoration: none;
+    color: var(--Color4);
+    background-color: transparent;
+    text-decoration: none;
 }
 
 a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
 }
 a.color2:link {
-  color: var(--Color2);
-  background-color: transparent;
-  text-decoration: none;
+    color: var(--Color2);
+    background-color: transparent;
+    text-decoration: none;
 }
 
 a.color3:link {
-  color: var(--Color3);
-  background-color: transparent;
-  text-decoration: none;
+    color: var(--Color3);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.color4:link {
+    color: var(--Color5);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.color5:link {
+    color: var(--Color6);
+    background-color: transparent;
+    text-decoration: none;
 }
 
 a.quick-nav-button:link{
-color: white;
-  background-color: transparent;
-  text-decoration: none;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
 }
 a.quick-nav-button:visited{
     color: white;
-  background-color: transparent;
-  text-decoration: none;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 .quick-nav-button:hover{

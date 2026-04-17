@@ -1,5 +1,5 @@
 #background{
-    background-image: url(TransStars.png);
+    background-image: url(../images/TransStars.png);
     animation: spin 500s linear infinite;
     height: 1000%;
     width: 1000%;
@@ -8,7 +8,7 @@
 }
 
 #background-2{
-    background-image: url(TransStars.png);
+    background-image: url(../images/TransStars.png);
     animation: spin 500s reverse linear infinite;
     height: 1000%;
     width: 1000%;
