@@ -17,7 +17,9 @@ let sillyQuotes = [
     "TORCHY'S TACOS?!",
     "Additional Aliases: Butterfly Mcgiggles, Otaku Steve, Maiki, Cranon, Namaiki, Charlotte",
     "Everything ends, but I've got 60% left.",
-    "Battle Damaged Purgatory Hell-World Princess"
+    "Battle Damaged Purgatory Hell-World Princess",
+    "I feed upon the unwavering spirit and forge my way through the dark journey!",
+    "Push Forward!"
 ]
 let currentQuote = Math.floor(Math.random()*sillyQuotes.length);
 let readQuotes = [currentQuote];
