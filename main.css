@@ -81,6 +81,7 @@ body{
     padding-bottom:10px;
     font-family:"Jura";
     max-width:-webkit-fill-available;
+    max-width: -moz-available;
 }
 .quick-nav-button{
     text-align:center;
