@@ -10,6 +10,7 @@ body{
     background: radial-gradient(at top, rgba(1, 78, 112, 1) 0%, rgba(20, 26, 50, 1) 100%);
     justify-content: flex-start;
     overflow:hidden;
+    touch-action:none;
 }
 
 #title-desc{
