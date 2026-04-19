@@ -1,7 +1,36 @@
-playSong();
-changeName();
-setInterval(changeName, 2000)
+customPlaySong = async function(){
+    song = document.getElementById("song");
+    song.volume = .25;
+    if(localStorage.getItem("musicVolume")){
+        song.volume = localStorage.getItem("musicVolume")
+    }
+    song.play().then(() => {
+        setTimeout(function(){
+            changeName();
+            changeName();
+            setInterval(changeName, 1000)
+        },500)
+        console.log("Playback started successfully!");
+    })
+    .catch((error) => {
+        console.error("Playback failed:", error.name, error.message);
+        $("body").append("<div id='music-popup'>You have autoplay turned off! Click anywhere for music! :3</div>")
+        setTimeout(animateMusicPopup,100);
+        $('body').on("click", function(){
+            setTimeout(function(){
+                changeName();
+                changeName();
+                setInterval(changeName, 1000)
+            },500)
+            $("#music-popup").css("transform","translateY(-100px)")
+            setTimeout($("#music-popup").remove,1000);
+            song.play();
+            $('body').off("click");
+    })
+  });
+}
 
+customPlaySong();
 
 if(localStorage.getItem("musicVolume")){
     $("#musicVolume-slider").attr("value",localStorage.getItem("musicVolume")*100)
