@@ -48,6 +48,10 @@ $("#play-music").on("click",function(){
     playSong();
 })
 
+$("#music-settings").on("click",function(){
+    window.location.href = "settings.html";
+})
+
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 if (isMobile) {

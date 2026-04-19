@@ -1,0 +1,15 @@
+#settings{
+    font-family:"Jura";
+}
+
+.slider-form, #testSound{
+    margin-bottom:5px;
+}
+
+#return{
+    text-align:center;
+}
+
+#testSound:hover{
+    cursor:pointer;
+}

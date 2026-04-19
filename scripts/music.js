@@ -1,9 +1,15 @@
+
+
 animateMusicPopup = function(){
     $("#music-popup").css("transform","translateY(0px)");
 }
 
 playSong = async function(){
     song = document.getElementById("song");
+    song.volume = .25;
+    if(localStorage.getItem("musicVolume")){
+        song.volume = localStorage.getItem("musicVolume")
+    }
     song.play().then(() => {
         console.log("Playback started successfully!");
     })
@@ -20,3 +26,14 @@ playSong = async function(){
   });
 }
 
+playSound = function(name){
+    sound = document.getElementById(name);
+    sound.volume = .25;
+    if(localStorage.getItem("soundVolume")){
+        sound.volume = localStorage.getItem("soundVolume")
+    }
+    return new Promise(res=>{
+        sound.play()
+        sound.onended = res
+    })
+}

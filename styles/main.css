@@ -244,13 +244,26 @@ a.quick-nav-button:visited{
     padding-top:5px;
     font-family:Jura;
     position:absolute;
-    bottom:10px;
+    bottom:30px;
     text-align:center;
 }
 #play-music:hover{
     cursor:pointer;
     color:aqua;
 }
+
+#music-settings{
+    padding-top:5px;
+    font-family:Jura;
+    position:absolute;
+    bottom:10px;
+    text-align:center;
+}
+#music-settings:hover{
+    cursor:pointer;
+    color:aqua;
+}
+
 
 #splash-page{
     padding-top:5px;
