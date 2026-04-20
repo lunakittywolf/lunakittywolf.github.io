@@ -116,3 +116,7 @@ $("#soundVolume-slider").on("change", function(){
 $("#testSound").on("click", function(){
     playSound("Hey")
 })
+
+$(".the-steves").on("click",function(){
+    window.location.href = "journal/the-steves/main.html";
+})
