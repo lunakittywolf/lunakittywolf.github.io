@@ -21,7 +21,6 @@ let startHeyCheck = function(){
         let times = 0;
         heyCheck = setInterval(function(){
             times++;
-            console.log(times)
             if(times>7){
                 clearInterval(heyCheck);
                 times = 0;
@@ -84,7 +83,7 @@ song.addEventListener("ended", function(){
     song.play().then(() => {
         startHeyCheck();
         setTimeout(function(){
-            setInterval(changeName, 1000)
+            nameChange = setInterval(changeName, 1000)
         },500)
         console.log("Playback started successfully!");
     })

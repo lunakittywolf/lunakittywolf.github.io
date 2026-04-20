@@ -37,7 +37,7 @@ song.addEventListener("ended", function(){
     song.currentTime = 0;
     song.play().then(() => {
         changeNameStuff();
-        setInterval(changeNameStuff(), 1500)
+        nameChange = setInterval(changeNameStuff(), 1500)
         console.log("Playback started successfully!");
     })
     console.log("ended");
