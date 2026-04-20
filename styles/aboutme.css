@@ -27,6 +27,34 @@
     }
 }
 
+#star{
+    z-index:0;
+    position:fixed;
+    right:200px;
+    background-color:white;
+    width: 2px;
+    height: 2px;
+    animation: twinkle linear 3s infinite;
+    transform:scale(3);
+    box-shadow: 0px 0px 5px 2px darkmagenta;
+    top:100px;
+}
+#star:hover{
+    cursor:pointer;
+}
+
+@keyframes twinkle {
+    0% { 
+        transform: rotateY(0deg);
+        transform:scale(1)
+    }50%{
+        transform:rotateY(180deg);
+        transform:scale(2)
+    }100% { 
+        transform:scale(1);
+        transform: rotateY(0deg);  
+    }    
+}
 
 #background-3{
     /* background: radial-gradient(circle,rgba(207, 29, 192, .5) 0%, rgba(255, 255, 255, 0) 50%); */

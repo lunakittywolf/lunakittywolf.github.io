@@ -1,13 +1,59 @@
 
+let heyCount = 0;
+let actualCount = 0;
+let heyCountExists = false;
+let clicked = false;
+
 let heyTrigger = function(){
+    setTimeout(function(){
+        $("#testSound").css("color","var(--Color)");
+    },100)
+    setTimeout(function(){
+        if(!clicked){
+            heyCount = 0
+            $("#hey-count").html("<p>Combo!</p>" + "<p><span id='hey-count-number'>" + heyCount + "</span></p>")
+        }else{
+            clicked = false;
+        }
+        $("#testSound").css('color',"white");
+    },600)
     console.log("Hey!")
+    $("body").off("click");
     $("#testSound").on("click",function(){
+        clicked=true;
+        heyCount++;
+        actualCount++;
+        if(!heyCountExists){
+            if(heyCount==actualCount){
+                $("#song-details").after("<section id='hey-count'><p>Perfect Combo!</p><p><span id='hey-count-number'>" + heyCount + "</span> out of 23</p></section>") 
+            }else{
+                $("#song-details").after("<section id='hey-count'><p>Combo!</p><p><span id='hey-count-number'>" + heyCount + "</span></p></section>")
+            }
+            heyCountExists=true;
+        }else{
+            $("#hey-count-number").text(heyCount)
+        }
+        if(heyCount==23){
+            $("#song-details").html("<span id='Hey'>Hey! You won!</span>")
+            $("#song-details").css("text-align","center");
+        }
+        origHtml = $("#song-details").html();
+        $("#song-details").html("<p id='Hey'>HEY!</p>")
+        $("#song-details").css("text-align","center");
         $("#settings").addClass("dancing")
         setTimeout(function(){
+            $("#song-details").html(origHtml);
+            $("#song-details").css("text-align","left");
             $("#settings").removeClass("dancing");
         },500)
     })
     setTimeout(function(){
+        if(heyCountExists){
+            $("body").on("click",function(){
+            heyCount = 0;
+            $("#hey-count").html("<p>Combo!</p>" + "<p><span id='hey-count-number'>" + heyCount + "</span></p>")
+        })
+        }
         $("#testSound").off("click");
         $("#testSound").on("click",function(){
             playSound("Hey")
@@ -17,6 +63,7 @@ let heyTrigger = function(){
 
 
 let startHeyCheck = function(){
+    heyCount=0;
     setTimeout(function(){
         let times = 0;
         heyCheck = setInterval(function(){
@@ -120,3 +167,16 @@ $("#testSound").on("click", function(){
 $(".the-steves").on("click",function(){
     window.location.href = "journal/the-steves/main.html";
 })
+
+
+
+
+
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+if (isMobile) {
+    $("#song-details").css("width","90%")
+    $("#settings").css("position","fixed")
+    $("#settings").css("top","300px")
+    $("#song-details").css("transform","translateY(140px)")
+    $("#song-details").css("height","220px");
+}

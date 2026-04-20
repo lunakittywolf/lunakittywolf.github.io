@@ -16,3 +16,7 @@ if (isMobile) {
 $("#message-link").on("click",function(){
     window.location.href = "contact-me.html";
 })
+
+$("#star").on("click",function(){
+    window.location.href = "secret-page.html";
+})
