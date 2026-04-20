@@ -176,7 +176,7 @@ const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/
 if (isMobile) {
     $("#song-details").css("width","90%")
     $("#settings").css("position","fixed")
-    $("#settings").css("top","0px")
+    $("#settings").css("top","200px")
     $("#song-details").css("transform","translateY(140px)")
     $("#song-details").css("height","240px");
 }
