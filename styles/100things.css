@@ -130,7 +130,7 @@ main{
 
 #main-task-bonus{
     font-family: Jura;
-    max-width: 500px;
+    width: 500px;
     padding-top: 10px;
 }
 #main-task-bonus > p{
