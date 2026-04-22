@@ -1,5 +1,5 @@
 let changeTitle = function(){
-    document.title = "Contact " + myName(numberParse(currentName))
+    document.title = "Contact " + myName[numberParse(currentName)]
 }
 changeName();
 let changeNameStuff = function(){

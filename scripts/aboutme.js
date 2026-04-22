@@ -22,8 +22,8 @@ $("#star").on("click",function(){
 })
 
 $("#why-names").on("click",function(){
+    $("#why-names").off("click");
     setTimeout(function(){
-        $("#why-names").off("click");
         $("#why-names").on("click",function(){
             $("#why-names").off("click");
             $("#background").fadeOut(2000);
@@ -60,12 +60,18 @@ $("#why-names").on("click",function(){
             )
             $('head').append('<link rel="stylesheet" type="text/css" href="styles/aboutmyshadow.css">')
             $("#why-names").on("click",function(){
+                localStorage.setItem("???","true");
                 WHY();
             })
+            $("#who-is-she").css("transition","1000ms")
+            $("#who-is-she").css("color","red");
+            setTimeout(function(){
+                $("#who-is-she").css("color","white");
+            },1000)
             },1000)
         })
         $("#why-names-title").css("transition","2000ms");
         $("#why-names-title").css("color","red");
-    },2000)
+    },3000)
 
 })
