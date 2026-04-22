@@ -35,7 +35,7 @@ $("#why-names").on("click",function(){
             playSong();
             $('head').append('<link rel="stylesheet" type="text/css" href="styles/aboutmyshadow.css">')
             $('head').append('<script defer src="scripts/aboutmyshadow.js"></script>')
-            $("body").load("aboutmyshadow.html")
+            $("body").load("./aboutmyshadow.html")
 
         })
         $("#why-names-title").css("transition","2000ms");
