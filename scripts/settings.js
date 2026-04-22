@@ -155,19 +155,16 @@ $("#musicVolume-slider").on("change", function(){
 
 $("#soundVolume-slider").on("change", function(){
     localStorage.setItem("soundVolume",$(this).val()/100);
-    if(sound){
-        sound.volume = localStorage.getItem("musicVolume");
-    }
 })
 
 $("#testSound").on("click", function(){
-    playSound("Hey")
+    playHey();
 })
 
 $(".the-steves").on("click",function(){
     window.location.href = "journal/the-steves/main.html";
 })
-
+createjs.Sound.registerSound("sounds/Hey.mp3")
 
 
 

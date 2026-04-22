@@ -26,6 +26,14 @@ playSong = async function(){
   });
 }
 
+playHey = function(){
+    hey = createjs.Sound.play("sounds/Hey.mp3");
+    hey.volume = .25;
+    if(localStorage.getItem("soundVolume")){
+        hey.volume = localStorage.getItem("soundVolume")
+    }
+}
+
 playSound = function(name){
     if(!document.getElementById(name)){
         $("body").append(`<audio id="${name}" src="sounds/${name}.mp3"></audio>`);
