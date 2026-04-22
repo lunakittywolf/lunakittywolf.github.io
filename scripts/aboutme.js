@@ -20,3 +20,31 @@ $("#message-link").on("click",function(){
 $("#star").on("click",function(){
     window.location.href = "secret-page.html";
 })
+
+$("#why-names").on("click",function(){
+    setTimeout(function(){
+        $("#why-names").off("click");
+        $("#why-names").on("click",function(){
+            $("#background").fadeOut(2000);
+            $("#background-2").fadeOut(2000);
+            $("#star").remove();
+            $("#song").html("<source src='music/ConcreteCircle.mp3' type='audio/ogg'>")
+            $(".content").removeClass("content-expand")
+            $("#why-names-title").css("color","white")
+            song.load();
+            playSong();
+            $('head').append('<link rel="stylesheet" type="text/css" href="styles/aboutmyshadow.css">')
+            $('head').append('<script defer src="scripts/aboutmyshadow.js"></script>')
+            
+            $.ajax({
+            url: "aboutmyshadow.html",
+            }).done(function() {
+                $("body").html(this)
+            });
+
+        })
+        $("#why-names-title").css("transition","2000ms");
+        $("#why-names-title").css("color","red");
+    },2000)
+
+})

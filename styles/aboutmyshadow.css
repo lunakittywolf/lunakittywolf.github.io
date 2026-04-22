@@ -1,0 +1,33 @@
+
+.question{
+    color:red;
+    font-family:"Shadows Into Light";
+    position:absolute;
+}
+
+#background-3{
+    animation: undulate 8s linear infinite
+}
+
+@keyframes undulate{
+    0%{
+        
+    }50%{
+        scale:1.25;
+        filter:opacity(0.85);
+    }100%{
+
+    }
+}
+
+@keyframes rainbow {
+    0%{
+        background-color: rgba(255, 0, 0, 1);
+    }
+    50%{
+        background-color: scarlet;
+    }
+    100%{
+        background-color: rgba(255, 0, 0, 1);
+    }
+}
