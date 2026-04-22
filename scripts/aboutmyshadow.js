@@ -68,7 +68,3 @@ WHY = function(){
         },80)   
     },15000) 
 }
-
-$("#why-names").on("click",function(){
-    WHY();
-})
