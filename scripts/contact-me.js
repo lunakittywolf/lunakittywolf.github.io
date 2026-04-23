@@ -1,5 +1,9 @@
 let changeTitle = function(){
-    document.title = "Contact " + myName[numberParse(currentName)]
+    let name = myName[numberParse(currentName)]
+    if(name == "Question"){
+        name = "???"
+    }
+    document.title = "Contact " + name;
 }
 changeName();
 let changeNameStuff = function(){

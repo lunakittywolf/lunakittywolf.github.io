@@ -1,5 +1,9 @@
 let changeTitle = function(){
-    document.title = myName[numberParse(currentName)] + "'s Splash Page" 
+    let name = myName[numberParse(currentName)]
+    if(name == "Question"){
+        name = "???"
+    }
+    document.title = name + "'s Splash Page" 
 }
 changeName();
 
